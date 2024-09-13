@@ -47,29 +47,131 @@
 
 <!--Hero_Section-->
 <section id="hero_section" class="top_cont_outer">
-  <div class="hero_wrapper">
-    <div class="container">
-      <div class="hero_section">
-        <div class="row">
-          <div class="col-lg-5 col-sm-7">
-            <div class="top_left_cont zoomIn wow animated"> 
-              <h2>Advanced <strong>Parking </strong> Management System </h2>
-              <p>AAR Services Pvt Ltd has been a trusted name in the parking management industry</p>
-              <p>We offer comprehensive parking solutions at various locations across India, including malls, hospitals, commercial towers, 
-                airports, metro stations, and smart parking systems. Our goal is to provide a fully automated 
-                parking experience to visitors through our own advanced Parking Management System. This includes automatic boom barriers, 
-                parking ticket dispensers, and specialized software, all designed to enhance user experience, increase revenue, and maintain 
-                transparency.</p>
-              <a href="#service" class="read_more2">Read more</a> </div>
-          </div>
-          <div class="col-lg-7 col-sm-5">
-			<img src="img/main_device_image.png" class="zoomIn wow animated" alt="" />
-		  </div>
-        </div>
-      </div>
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="slide fade">
+      <img src="img/B1.jpg" style="width:100%">
+      <div class="text">On-Site Parking Management
+        VALET PARKING SERVICES: Providing valet attendants to park vehicles for customers at venues like malls, hotels, hospitals, or event spaces.
+        Attendant Parking: Deploying parking attendants to manage parking lots, assist drivers, and ensure efficient space usage.
+        Self-Parking Management: Setting up a structured and managed self-parking system with clear signage, guidance, and security measures.</div>
     </div>
+    <div class="slide fade">
+      <img src="img/B2.jpg" style="width:100%">
+      <div class="text">Automated Parking Systems
+        SMART PARKING SOLUTIONS: Integration of automated parking systems like boom barriers, parking ticket dispensers, and sensors for space detection.
+        Parking Guidance Systems: Real-time indicators and displays showing available parking spots, reducing search time and improving flow.
+        Automated Payment Systems: Contactless and digital payment options, including QR codes, mobile apps, and card payments.</div>
+    </div>
+    <div class="slide fade">
+      <img src="img/B3.jpg" style="width:100%">
+      <div class="text">Technology-Driven Solutions
+        PARKING MANAGEMENT SOFTWARE: Offering software for managing ticketing, billing, monitoring vehicles, and generating real-time reports.
+        License Plate Recognition (LPR): Using technology to scan and record license plates for seamless entry and exit, often in automated parking facilities.
+        Mobile App Integration: Providing apps for customers to book parking spots, make payments, and receive parking guidance</div>
+    </div>
+    <div class="slide fade">
+      <img src="img/B4.jpg" style="width:100%">
+      <div class="text">AIRPORT AND METRO STATION PARKING: Managing large-scale parking operations for high-traffic areas with security and technology-driven solutions.</div>
+    </div>
+    <div class="slide fade">
+      <img src="img/B5.jpg" style="width:100%">
+      <div class="text">PARKING LOT DESIGN AND PLANNING: Consulting on the optimal design and layout of parking spaces for new projects, including efficient use of space and traffic flow.</div>
+    </div>
+
+    <!-- Navigation -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+
+  <!-- Inline CSS for Slideshow -->
+  <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .fade {
+      -webkit-animation: fade 7s ease-in-out;
+      animation: fade 7s ease-in-out;
+    }
+
+    @-webkit-keyframes fade {
+      from { opacity: .6 } 
+      to { opacity: 1 }
+    }
+
+    @keyframes fade {
+      from { opacity: .6 } 
+      to { opacity: 1 }
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 1.5em;
+      padding: 20px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+
+  <!-- JavaScript for slideshow -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    function plusSlides(n) {
+      slideIndex += n;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      if (slideIndex < 1) {slideIndex = slides.length}
+      showSlides();
+    }
+  </script>
 </section>
+
 <!--Hero_Section--> 
 
 <section id="aboutUs"><!--Aboutus-->
