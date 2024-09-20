@@ -713,11 +713,28 @@
 
 <!-- WhatsApp Chat Box -->
 <div class="whatsapp-chat" style="position: fixed; bottom: 40px; right: 40px; z-index: 1000;">
-  <a href="https://wa.me/919205313887?text=Hello, I would like to inquire about your services!" target="_blank">
-    <img src="img/whatsapp-logo.png" alt="WhatsApp Chat" style="width: 50px; height: auto;" />
-
+  <a href="https://wa.me/919205313887?text=Hello, I would like to inquire about your services!" target="_blank" style="display: inline-block;">
+    <img src="img/whatsapp-logo.png" alt="WhatsApp Chat" 
+         style="width: 50px; height: auto; 
+                animation: bloom 0.5s infinite alternate; 
+                transition: transform 0.3s;"
+         onmouseover="this.style.transform='scale(1.2)';" 
+         onmouseout="this.style.transform='scale(1)';" />
   </a>
 </div>
+
+<style>
+@keyframes bloom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+</style>
+
+
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
