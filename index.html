@@ -9,7 +9,8 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
- 
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -19,261 +20,294 @@
 </head>
 <body>
 
+<!--Top Info Section-->
+<style>
+  .top-info {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Add some padding */
+    font-family: Arial, sans-serif; /* Change font */
+    border-bottom: 1px solid #ccc; /* Add a subtle border */
+  }
+  .top-info p {
+    margin: 0; /* Remove margin */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.6; /* Improve line height */
+  }
+  .top-info a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  .top-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+</style>
+<div class="top-info">
+  <div class="container">
+    <p style="margin: 0; font-size: 14px;">
+      <img src="img/icon/location.png" alt="Location" style="width: 16px; vertical-align: middle; margin-right: 5px;">
+      Office: D-301, 3rd Floor, Roza Jalalpur, Opposite Ratna Pearls, Greater Noida, U.P. 201009 |
+      <img src="img/icon/phone.png" alt="Phone" style="width: 16px; vertical-align: middle; margin: 0 5px;">
+      <a href="tel:+919205313887" style="text-decoration: none; color: #333;">+91-9205313887</a> |
+      <img src="img/icon/email.png" alt="Email" style="width: 16px; vertical-align: middle; margin: 0 5px;">
+      <a href="mailto:info@aarparkservices.com" style="text-decoration: none; color: #333;">info@aarparkservices.com</a>
+    </p>
+  </div>
+</div>
+
+
+
 <!--Header_section-->
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
       <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-	  <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
         </div>
-	    <div id="main-nav" class="collapse navbar-collapse navStyle">
-			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-			  <li><a href="#service" class="scroll-link">Services</a></li>
-			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
-			  <li><a href="#clients" class="scroll-link">Clients</a></li>
-			  <li><a href="#team" class="scroll-link">Team</a></li>
-			  <li><a href="#contact" class="scroll-link">Contact</a></li>
-			</ul>
-      </div>
-	 </nav>
+        <div id="main-nav" class="collapse navbar-collapse navStyle">
+          <ul class="nav navbar-nav" id="mainNav">
+            <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+            <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+            <li><a href="#service" class="scroll-link">Services</a></li>
+            <li><a href="#Portfolio" class="scroll-link">Gallery</a></li>
+            <li><a href="#clients" class="scroll-link">Clients</a></li>
+            <li><a href="#team" class="scroll-link">Team</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
 </header>
-<!--Header_section--> 
+<!--Header_section-->
 
-<!--Hero_Section-->
+
+<!-- Hero Section -->
+<!-- Hero Section -->
 <section id="hero_section" class="top_cont_outer">
-  <div class="slideshow-container">
-    <!-- Slides -->
-    <div class="slide fade">
-      <img src="img/B1.jpg" style="width:100%">
-      <div class="text">On-Site Parking Management
-        VALET PARKING SERVICES: Providing valet attendants to park vehicles for customers at venues like malls, hotels, hospitals, or event spaces.
-        Attendant Parking: Deploying parking attendants to manage parking lots, assist drivers, and ensure efficient space usage.
-        Self-Parking Management: Setting up a structured and managed self-parking system with clear signage, guidance, and security measures.</div>
-    </div>
-    <div class="slide fade">
-      <img src="img/B2.jpg" style="width:100%">
-      <div class="text">Automated Parking Systems
-        SMART PARKING SOLUTIONS: Integration of automated parking systems like boom barriers, parking ticket dispensers, and sensors for space detection.
-        Parking Guidance Systems: Real-time indicators and displays showing available parking spots, reducing search time and improving flow.
-        Automated Payment Systems: Contactless and digital payment options, including QR codes, mobile apps, and card payments.</div>
-    </div>
-    <div class="slide fade">
-      <img src="img/B3.jpg" style="width:100%">
-      <div class="text">Technology-Driven Solutions
-        PARKING MANAGEMENT SOFTWARE: Offering software for managing ticketing, billing, monitoring vehicles, and generating real-time reports.
-        License Plate Recognition (LPR): Using technology to scan and record license plates for seamless entry and exit, often in automated parking facilities.
-        Mobile App Integration: Providing apps for customers to book parking spots, make payments, and receive parking guidance</div>
-    </div>
-    <div class="slide fade">
-      <img src="img/B4.jpg" style="width:100%">
-      <div class="text">AIRPORT AND METRO STATION PARKING: Managing large-scale parking operations for high-traffic areas with security and technology-driven solutions.</div>
-    </div>
-    <div class="slide fade">
-      <img src="img/B5.jpg" style="width:100%">
-      <div class="text">PARKING LOT DESIGN AND PLANNING: Consulting on the optimal design and layout of parking spaces for new projects, including efficient use of space and traffic flow.</div>
-    </div>
+  <div class="hero_wrapper">
+    <div class="container">
+      <div class="hero_section">
+        <div class="row">
+          <div class="col-lg-5 col-sm-7">
+            <div class="top_left_cont zoomIn wow animated">
+              
+              <!-- Styled Heading with Poppins -->
+              <h2 style="font-family: 'Poppins', sans-serif; font-weight: 600; color: #f0f0f0;">
+                <strong>Welcome to Aar Services</strong>
+              </h2>
 
-    <!-- Navigation -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
+              <!-- Styled Paragraphs with Lora -->
+              <p style="font-family: 'Lora', serif; font-size: 1.2em; line-height: 1.6; color: #ffffff;">
+                AAR Services Pvt. Ltd. redefines urban mobility with cutting-edge parking solutions for malls, offices, airports, and hospitals. Our offerings include FASTag integration, boom barriers, and advanced automation for efficient management. We also provide comprehensive solutions for manpower services, sliding gate motors, parking software, and road safety equipment, ensuring convenience and safety for all users.
+              <!-- </p>
+              <p style="font-family: 'Lora', serif; font-size: 1.2em; line-height: 1.6; color: #ffffff;">
+                Provider of Parking Solutions, Boom Barriers, and Manpower
+              </p> -->
 
-  <!-- Inline CSS for Slideshow -->
-  <style>
-    .slideshow-container {
-      position: relative;
-      max-width: 100%;
-      margin: auto;
-    }
+              <!-- Button -->
+              <a href="#service" class="read_more2">Read more</a> 
+            </div>
+          </div>
 
-    .slide {
-      display: none;
-    }
+          <div class="col-lg-7 col-sm-5">
+            <div class="slideshow-container" style="position: relative; max-width: 100%; margin: auto;">
+              <div class="mySlides" style="display: none;">
+                <img src="img/B1.jpeg" style="width: 100%;">
+              </div>
+              <!-- Uncomment this if needed -->
+              <!-- <div class="mySlides" style="display: none;">
+                <img src="img/B2.jpg" style="width: 100%;">
+              </div> -->
+              <div class="mySlides" style="display: none;">
+                <img src="img/B3.jpg" style="width: 100%;">
+              </div>
+              <div class="mySlides" style="display: none;">
+                <img src="img/B4.jpeg" style="width: 100%;">
+              </div>
+              <div class="mySlides" style="display: none;">
+                <img src="img/B5.jpg" style="width: 100%;">
+              </div>
 
-    .fade {
-      -webkit-animation: fade 7s ease-in-out;
-      animation: fade 7s ease-in-out;
-    }
-
-    @-webkit-keyframes fade {
-      from { opacity: .6 } 
-      to { opacity: 1 }
-    }
-
-    @keyframes fade {
-      from { opacity: .6 } 
-      to { opacity: 1 }
-    }
-
-    .text {
-      color: #f2f2f2;
-      font-size: 1.5em;
-      padding: 20px;
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-    }
-
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-  </style>
-
-  <!-- JavaScript for slideshow -->
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 5000); // Change image every 5 seconds
-    }
-
-    function plusSlides(n) {
-      slideIndex += n;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      if (slideIndex < 1) {slideIndex = slides.length}
-      showSlides();
-    }
-  </script>
-</section>
-
-<!--Hero_Section--> 
-
-<section id="aboutUs"><!--Aboutus-->
-<div class="inner_wrapper">
-  <div class="container">
-    <h2>About Us</h2>
-    <div class="inner_section">
-	<div class="row">
-      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
-      	<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
-        	<div class=" delay-01s animated fadeInDown wow animated">
-
-			<h3>AAR Services Pvt Ltd</h3><br/> 
-            <p>Established in 2023, AAR SERVICES is dedicated to providing complete & seamless parking
-              solutions. Recognizing the growing demand for organized parking as the number of
-              vehicles increases, AAR Services offers hassle-free parking services across shopping
-              malls, corporate offices, hospitals, airports and more. We prioritize convenience and security,
-              ensuring the best experience for commuters, not just maximizing revenue</p> <br/>
-<p>“AAR Services approach is rooted in extensive experience and thorough site
-  assessments. By evaluating existing infrastructure and traffic conditions, the
-  company has developed optimized solutions to make the most of available
-  parking space. Their commitment to maintaining secure and well-managed
-  parking zones ensures a seamless experience for all users.</p>
-</div>
-<div class="work_bottom"> <span>Want to know more..</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>       
-	   </div>
-      	
+              <!-- Navigation arrows -->
+              <a class="prev" onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)" style="cursor: pointer; position: absolute; top: 50%; right: 0; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px 0 0 3px; user-select: none;">&#10095;</a>
+            </div>
+          </div>
+        </div>
       </div>
-	  
-      
     </div>
-  </div> 
   </div>
 </section>
-<!--Aboutus--> 
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+
+  function plusSlides(n) {
+    slideIndex += n;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = slides.length}
+    showSlides();
+  }
+</script>
+
+
+<!-- About Us Section -->
+<section id="aboutUs">
+  <div class="inner_wrapper">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="inner_section">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="delay-01s animated fadeInDown wow animated">
+
+              <!-- Styled heading with Poppins font -->
+              <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600; color: #333;">AAR Services Pvt Ltd</h3>
+              <br/>
+
+              <!-- Styled paragraphs with Lora font -->
+              <p style="font-family: 'Lora', serif; font-size: 1.1em; line-height: 1.6; color: #555;">
+                Founded in 2023, AAR Services is revolutionizing the way you park! As the number of vehicles grows, we’re here to provide seamless, stress-free parking solutions for shopping malls, corporate offices, hospitals, airports, and beyond. Our approach? It’s all about convenience, security, and maximizing space. From high-tech parking software with FASTag integration to skilled manpower, reliable sliding gate motors, boom barrier installations, and top-notch road safety equipment—we’ve got it all covered. Say goodbye to parking headaches and hello to a smooth, efficient, and secure experience with AAR Services!
+              </p>
+              <br/>
+              <p style="font-family: 'Lora', serif; font-size: 1.1em; line-height: 1.6; color: #555;">
+                AAR Services' approach is rooted in extensive experience and thorough site assessments. By evaluating existing infrastructure and traffic conditions, the company has developed optimized solutions to make the most of available parking space. Their commitment to maintaining secure and well-managed parking zones ensures a seamless experience for all users.
+              </p>
+              <!-- Mission and Vision Section (Full Width) -->
+              <div class="row" style="margin-top: 40px;">
+                <div class="col-md-6">
+                  <div style="background-color: #f4f4f4; padding: 15px; border-radius: 10px; display: flex; align-items: center;">
+                    <img src="img/icon/mission.png" alt="Mission Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+                    <div>
+                      <h2 style="color: #007bff;">MISSION</h2>
+                      <p style="font-size: 1.2em; color: #555; text-align: justify;">
+                        At <strong>AAR Services</strong>, we strive to redefine parking by providing innovative, efficient, and seamless solutions. Our mission is to become the go-to parking service provider, known for <strong>exceptional quality</strong>, <strong>rapid service</strong>, and <strong>enduring client partnerships</strong>. We aim to create stress-free parking experiences, ensuring convenience, safety, and satisfaction for all.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div style="background-color: #e9f7fe; padding: 15px; border-radius: 10px; display: flex; align-items: center;">
+                    <img src="img/icon/vision.png" alt="Vision Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+                    <div>
+                      <h2 style="color: #007bff;">VISION</h2>
+                      <p style="font-size: 1.2em; color: #555; text-align: justify;">
+                        We envision a future where <strong>AAR Services</strong> sets the industry standard for parking solutions. Our focus is on <strong>continuous innovation</strong>, driving forward with cutting-edge technology and customer-centric services. We aim to enhance urban mobility and transform parking into a secure, streamlined, and effortless process for everyone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="work_bottom">
+              <span>Want to know more..</span> 
+              <a href="#contact" class="contact_btn">Contact Us</a>
+            </div>       
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
 
 
 <!--Service-->
-<section  id="service">
+<section id="service">
   <div class="container">
     <h2>Services</h2>
     <div class="service_wrapper">
       <div class="row">
         <div class="col-lg-4">
           <div class="service_block">
-          <!--  <div class="service_icon delay-03s animated wow  zoomIn"> <span><img src="img/logo11.png" alt="Logo" style="width: 100px; height: 100px;"></span> </div> -->
-            <h3 class="animated fadeInUp wow">On-Site Parking Management</h3>
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon1.png" alt="Parking Services Icon" style="width: 40px; height: 40px;"></span>
+            </div>
+            <h3 class="animated fadeInUp wow">Parking Services:</h3>
             <p class="animated fadeInDown wow">
-            <p><strong>VALET PARKING SERVICES:</strong> Providing valet attendants to park vehicles for customers at venues like malls, hotels, hospitals, or event spaces.</p>
-            <p><Strong>Attendant Parking:</Strong> Deploying parking attendants to manage parking lots, assist drivers, and ensure efficient space usage.</p>
-            <p><Strong>Self-Parking Management:</Strong> Setting up a structured and managed self-parking system with clear signage, guidance, and security measures.</p></p>
+              AAR Services delivers top-notch parking management solutions designed to optimize space and streamline operations. Our expert team ensures hassle-free parking experiences with efficient space utilization and professional valet services. Enhance your facility’s convenience, safety, and visitor satisfaction with our comprehensive parking solutions, tailored for shopping malls, corporate offices, hospitals, and more.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 borderLeft">			
           <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Automated Parking Systems</h3>
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon2.png" alt="Manpower Services Icon" style="width: 40px; height: 40px;"></span>
+            </div>
+            <h3 class="animated fadeInUp wow">Manpower Services:</h3>
             <p class="animated fadeInDown wow">
-            <p><strong>SMART PARKING SOLUTIONS:</strong> Integration of automated parking systems like boom barriers, parking ticket dispensers, and sensors for space detection.</p>
-            <p><Strong>Parking Guidance Systems:</Strong> Real-time indicators and displays showing available parking spots, reducing search time and improving flow.</p>
-            <p><Strong>Automated Payment Systems:</Strong> Contactless and digital payment options, including QR codes, mobile apps, and card payments.</p></p>
+              Boost operational efficiency with our skilled manpower services. We provide trained personnel for security, housekeeping, and maintenance, ensuring seamless facility management. Enhance your business operations with reliable support tailored to meet diverse industry needs.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 borderLeft">
           <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Technology-Driven Solutions</h3>
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon3.png" alt="Boom Barrier Solutions Icon" style="width: 40px; height: 40px;"></span>
+            </div>
+            <h3 class="animated fadeInUp wow">Boom Barrier Solutions:</h3>
             <p class="animated fadeInDown wow">
-            <p><strong>PARKING MANAGEMENT SOFTWARE:</strong> Offering software for managing ticketing, billing, monitoring vehicles, and generating real-time reports.</p>
-            <p><Strong>License Plate Recognition (LPR):</Strong> Using technology to scan and record license plates for seamless entry and exit, often in automated parking facilities.</p>
-            <p><Strong>Mobile App Integration:</Strong> Providing apps for customers to book parking spots, make payments, and receive parking guidance.</p></p>
+              Upgrade your facility's security with our advanced boom barrier solutions. Our automated systems offer robust access control and streamline entry points, providing a secure, efficient way to manage vehicle flow in high-traffic areas.
+            </p>
           </div>
         </div>
       </div>
-	   <div class="row borderTop">
+      <div class="row borderTop">
         <div class="col-lg-4 mrgTop">
           <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Specialized Parking Services</h3>
-            <p class="animated fadeInDown wow">
-            <p><strong>AIRPORT AND METRO STATION PARKING:</strong> Managing large-scale parking operations for high-traffic areas with security and technology-driven solutions.</p>
-            <p><Strong>Commercial and Corporate Parking:</Strong> Offering parking solutions tailored to commercial buildings and office complexes, ensuring smooth operations during peak hours.</p>
-            <p><Strong>Hospital and Healthcare Parking:</Strong> Providing efficient parking services for healthcare facilities, focusing on accessibility and ease of use.</p></p>
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon4.png" alt="Sliding Gate Motors Icon" style="width: 40px; height: 40px;"></span>
             </div>
-        </div>
-        <div class="col-lg-4 borderLeft mrgTop">
-          <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Consultancy and Design</h3>
+            <h3 class="animated fadeInUp wow">Sliding Gate Motors:</h3>
             <p class="animated fadeInDown wow">
-            <p><strong>PARKING LOT DESIGN AND PLANNING:</strong> Consulting on the optimal design and layout of parking spaces for new projects, including efficient use of space and traffic flow.</p>
-            <p><Strong>Feasibility Studies:</Strong>  Conducting research and analysis to determine the best parking solutions for a particular location based on traffic patterns and customer needs.</p></p>
+              Ensure secure and convenient access with our premium sliding gate motors. Designed for both commercial and residential properties, our solutions offer reliable and smooth operation, enhancing security and ease of use.
+            </p>    
           </div>
         </div>
         <div class="col-lg-4 borderLeft mrgTop">
           <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Safety and Security</h3>
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon5.png" alt="Parking Software Icon" style="width: 40px; height: 40px;"></span>
+            </div>
+            <h3 class="animated fadeInUp wow">Parking Software:</h3>
             <p class="animated fadeInDown wow">
-            <p><strong>24/7 SURVEILLANCE AND MONITORING:</strong> Installing CCTV cameras, security personnel, and monitoring systems for parking lots.</p>
-            <p><Strong>Fire Safety Compliance:</Strong> Ensuring parking facilities comply with fire safety regulations and are equipped with necessary safety measures.</p>
-            <p><Strong>Access Control Systems:</Strong> Providing secure entry and exit points using access cards, RFID, or LPR technology.</p></p>
+              Revolutionize parking management with our advanced parking software solutions. Featuring FASTag integration, our technology offers seamless, automated transactions and real-time monitoring, optimizing your parking operations for efficiency and customer satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 borderLeft mrgTop">
+          <div class="service_block">
+            <div class="service_icon delay-03s animated wow zoomIn" style="width: 70px; height: 70px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+              <span><img src="img/icon6.png" alt="Road Safety Equipment Icon" style="width: 40px; height: 40px;"></span>
+            </div>
+            <h3 class="animated fadeInUp wow">Road Safety Equipment:</h3>
+            <p class="animated fadeInDown wow">
+              Prioritize safety with our high-quality road safety equipment, including speed breakers, reflective markers, and signage. Designed to enhance traffic management, our solutions keep your parking areas safe and well-regulated for all users.
+            </p>  
           </div>
         </div>
       </div>
@@ -281,8 +315,6 @@
   </div>
 </section>
 <!--Service-->
-
-
 
 
 <!-- Portfolio -->
@@ -293,7 +325,7 @@
     
     <!-- Title -->
     <div class="section-title">
-      <h2>Portfolio</h2>
+      <h2>Gallery</h2>
     </div>
     <!--/Title --> 
     
@@ -304,140 +336,201 @@
   
   <!-- Portfolio Filters -->
   <div class="portfolio"> 
-    
     <div id="filters" class="sixteen columns">
       <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".prototype">
-          <h5>Prototype</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".design">
-          <h5>Design</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".android">
-          <h5>Android</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".appleIOS">
-          <h5>Apple IOS</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".web">
-          <h5>Web App</h5>
-          </a></li>
+        <li><a id="all" href="#" data-filter="*" class="active"><h5>All</h5></a></li>
+        <li><a href="#" data-filter=".parkingServices"><h5>Parking Services</h5></a></li>
+        <li><a href="#" data-filter=".manpowerServices"><h5>Manpower Services</h5></a></li>
+        <li><a href="#" data-filter=".boomBarrierSolutions"><h5>Boom Barrier Solutions</h5></a></li>
+        <li><a href="#" data-filter=".slidingGateMotors"><h5>Sliding Gate Motors</h5></a></li>
+        <li><a href="#" data-filter=".roadSafetyEquipment"><h5>Road Safety Equipment</h5></a></li>
       </ul>
     </div>
-    <!--/Portfolio Filters --> 
+    <!-- /Portfolio Filters --> 
     
     <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
+    <div class="isotope fadeInLeft animated wow" id="portfolio_wrapper" style="display: flex; flex-wrap: wrap;"> 
       
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>        
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">SMS Mobile App</h4>
-          </div>
+      <!-- Parking Services -->
+      <div class="portfolio-item one-four parkingServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/p1.jpg" alt="Parking Services 1">
         </div>
-        </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item-->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Finance App</h4>
+          <div class="item_info">
+            <h4 class="project_name">Parking Services</h4>
           </div>
         </div>
       </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+
+      <div class="portfolio-item one-four parkingServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/p2.jpg" alt="Parking Services 2">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">GPS Concept</h4>
+          <div class="item_info">
+            <h4 class="project_name">Parking Services</h4>
           </div>
         </div>
       </div>
-      <!--/Portfolio Item--> 
-      
-      <!-- Portfolio Item-->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+
+      <div class="portfolio-item one-four parkingServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/p3.jpg" alt="Parking Services 3">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Shopping</h4>
+          <div class="item_info">
+            <h4 class="project_name">Parking Services</h4>
           </div>
         </div>
       </div>
-      <!-- Portfolio Item --> 
       
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+      <!-- Manpower Services -->
+      <div class="portfolio-item one-four manpowerServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/m1.jpg" alt="Manpower Services 1">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Managment</h4>
+          <div class="item_info">
+            <h4 class="project_name">Manpower Services</h4>
           </div>
         </div>
       </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+
+      <div class="portfolio-item one-four manpowerServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/m2.jpg" alt="Manpower Services 2">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">iPhone</h4>
+          <div class="item_info">
+            <h4 class="project_name">Manpower Services</h4>
           </div>
         </div>
       </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
+
+      <div class="portfolio-item one-four manpowerServices isotope-item">
+        <div class="portfolio_img">
+          <img src="img/m3.jpg" alt="Manpower Services 3">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Nexus Phone</h4>
+          <div class="item_info">
+            <h4 class="project_name">Manpower Services</h4>
           </div>
         </div>
-       </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
+      </div>
+
+      <!-- Boom Barrier Solutions -->
+      <div class="portfolio-item one-four boomBarrierSolutions isotope-item">
+        <div class="portfolio_img">
+          <img src="img/bloom1.jpg" alt="Boom Barrier Solutions 1">
+        </div>
         <div class="item_overlay">
-          <div class="item_info"> 
-				<h4 class="project_name">Android</h4>
+          <div class="item_info">
+            <h4 class="project_name">Boom Barrier Solutions</h4>
           </div>
         </div>
-        </a> </div>
-      <!--/Portfolio Item --> 
-      
+      </div>
+
+      <div class="portfolio-item one-four boomBarrierSolutions isotope-item">
+        <div class="portfolio_img">
+          <img src="img/bloom2.jpg" alt="Boom Barrier Solutions 2">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Boom Barrier Solutions</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item one-four boomBarrierSolutions isotope-item">
+        <div class="portfolio_img">
+          <img src="img/bloom3.jpg" alt="Boom Barrier Solutions 3">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Boom Barrier Solutions</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sliding Gate Motors -->
+      <div class="portfolio-item one-four slidingGateMotors isotope-item">
+        <div class="portfolio_img">
+          <img src="img/s1.jpg" alt="Sliding Gate Motors 1">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Sliding Gate Motors</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item one-four slidingGateMotors isotope-item">
+        <div class="portfolio_img">
+          <img src="img/s2.jpg" alt="Sliding Gate Motors 2">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Sliding Gate Motors</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item one-four slidingGateMotors isotope-item">
+        <div class="portfolio_img">
+          <img src="img/s3.jpg" alt="Sliding Gate Motors 3">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Sliding Gate Motors</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Road Safety Equipment -->
+      <div class="portfolio-item one-four roadSafetyEquipment isotope-item">
+        <div class="portfolio_img">
+          <img src="img/rs1.jpg" alt="Road Safety Equipment 1">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Road Safety Equipment</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item one-four roadSafetyEquipment isotope-item">
+        <div class="portfolio_img">
+          <img src="img/rs2.jpg" alt="Road Safety Equipment 2">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Road Safety Equipment</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item one-four roadSafetyEquipment isotope-item">
+        <div class="portfolio_img">
+          <img src="img/rs3.jpg" alt="Road Safety Equipment 3">
+        </div>
+        <div class="item_overlay">
+          <div class="item_info">
+            <h4 class="project_name">Road Safety Equipment</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- /Portfolio Items End --> 
+
     </div>
-    <!--/Portfolio Wrapper --> 
+    <!-- /Portfolio Wrapper --> 
     
   </div>
-  <!--/Portfolio Filters -->
-  
-  <div class="portfolio_btm"></div>
-  
-  
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
-  </div>
- 
+  <!-- /Portfolio Filters -->
   
 </section>
-<!--/Portfolio --> 
-
+<!-- /Portfolio -->
 <section class="page_section" id="clients"><!--page_section-->
   <h2>Clients</h2>
 <!--page_section-->
@@ -454,15 +547,16 @@
 </section>
 <!--client_logos-->
 
-<section class="page_section team" id="team"><!--main-section team-start-->
+<section class="page_section team" id="team">
+  <!--main-section team-start-->
   <div class="container">
     <h2>Team</h2>
-    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
-    <div class="team_section clearfix">
-      <div class="team_area">
+    <h6>Experts and key Members</h6>
+    <div class="team_section clearfix" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <div class="team_area" style="text-align: center; flex: 1;">
         <div class="team_box wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team_pic1.jpg" alt="">
+          <img src="img/t1.jpeg" alt="" style="width: 150px; height: auto;">
           <ul>
             <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
             <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
@@ -470,14 +564,14 @@
             <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
           </ul>
         </div>
-        <h3 class="wow fadeInDown delay-03s">Tom Rensed</h3>
-        <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-        <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+        <h3 class="wow fadeInDown delay-03s">Rajeev Ranjan</h3>
+        <span class="wow fadeInDown delay-03s">Founder</span>
       </div>
-      <div class="team_area">
+
+      <div class="team_area" style="text-align: center; flex: 1;">
         <div class="team_box  wow fadeInDown delay-06s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team_pic2.jpg" alt="">
+          <img src="img/t2.jpeg" alt="" style="width: 150px; height: auto;">
           <ul>
             <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
             <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
@@ -485,14 +579,14 @@
             <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
           </ul>
         </div>
-        <h3 class="wow fadeInDown delay-06s">Kathren Mory</h3>
-        <span class="wow fadeInDown delay-06s">Vice President</span>
-        <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+        <h3 class="wow fadeInDown delay-06s">Abhilasha Kumari</h3>
+        <span class="wow fadeInDown delay-06s">Chief Executive Officer</span>
       </div>
-      <div class="team_area">
+
+      <div class="team_area" style="text-align: center; flex: 1;">
         <div class="team_box wow fadeInDown delay-09s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team_pic3.jpg" alt="">
+          <img src="img/t3.jpeg" alt="" style="width: 150px; height: auto;">
           <ul>
             <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
             <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
@@ -500,15 +594,30 @@
             <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
           </ul>
         </div>
-        <h3 class="wow fadeInDown delay-09s">Lancer Jack</h3>
-        <span class="wow fadeInDown delay-09s">Senior Manager</span>
-        <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+        <h3 class="wow fadeInDown delay-09s">Shashi Ranjan</h3>
+        <span class="wow fadeInDown delay-09s">Sales and Marketing Manager</span>
+      </div>
+
+      <div class="team_area" style="text-align: center; flex: 1;">
+        <div class="team_box wow fadeInDown delay-09s">
+          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/t4.jpg" alt="" style="width: 150px; height: auto;">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
+            <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
+            <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
+            <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-09s">Pankaj Tiwari</h3>
+        <span class="wow fadeInDown delay-09s">Marketing Manager</span>
       </div>
     </div>
   </div>
 </section>
+
 <!--/Team-->
-<!--Footer-->
+<!-- Footer -->
 <footer class="footer_wrapper" id="contact">
   <div class="container">
     <section class="page_section contact" id="contact">
@@ -520,33 +629,47 @@
           <div class="col-lg-4"></div>
         </div>
       </div>
-      
+
       <div class="row">
-        <div class="col-lg-4 wow fadeInLeft">  
+        <div class="col-lg-4 wow fadeInLeft">
           <div class="contact_info">
             <div class="detail">
               <h4>AAR Services PVT. Ltd.</h4>
               <p>AAR Services Pvt. Ltd., established in 2023, provides seamless parking solutions across malls, offices, hospitals, airports, and more. With a focus on convenience and security, we offer hassle-free parking management. Our expertise in site assessments allows us to optimize parking spaces, ensuring a smooth and secure experience for all users.</p>
-            <strong>Office Address</Address></strong>  
-            <p>Office: D-301, 3rd Floor, Roza Jalalpur, Opposite Ratna Pearls, Greater Noida, U.P. 201009</p>
+              
+              <strong>Office Address</strong>  
+              <p>Office: D-301, 3rd Floor, Roza Jalalpur, Opposite Ratna Pearls, Greater Noida, U.P. 201009</p>
             </div>
+            
             <div class="detail">
               <h4>Call us</h4>
               <p>+91-9870227778</p>
               <p>+91-9205313887</p>
             </div>
+            
             <div class="detail">
               <h4>Email us</h4>
               <p>info@aarparkservices.com</p>
               <p>https://aarservicesgroup.com</p>
-            </div> 
+            </div>
           </div>
-          
+
           <ul class="social_links">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
+            <li class="twitter animated bounceIn wow delay-02s">
+              <a href="https://x.com/aarservices2023" target="_blank"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="facebook animated bounceIn wow delay-03s">
+              <a href="https://www.facebook.com/aarservicesofficial/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="pinterest animated bounceIn wow delay-04s">
+              <a href="https://www.threads.net/@aarservicesofficial" target="_blank"><i class="fa fa-pinterest"></i></a>
+            </li>
+            <li class="gplus animated bounceIn wow delay-05s">
+              <a href="https://www.instagram.com/aarservicesofficial/" target="_blank"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li class="youtube animated bounceIn wow delay-06s">
+              <a href="https://www.youtube.com/@Aarservicesofficial" target="_blank"><i class="fa fa-youtube"></i></a>
+            </li>
           </ul>
         </div>
 
@@ -558,13 +681,43 @@
         </div>
         <!-- End of Google Form embed -->
       </div>
+
+      <!-- Google Map Embed -->
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-12">
+          <h4 style="text-align:center;">Our Location</h4>
+          <div style="border: 1px solid #ddd; padding: 10px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14004.967942319087!2d77.48203834999999!3d28.46939895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceaf8c1d41df9%3A0x4f7b7ae17169e3c2!2sD-301%2C%20Roza%20Jalalpur%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1695110007111!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- End of Google Map Embed -->
+
     </section>
   </div>
   <div class="container">
-    <div class="footer_bottom"><span>Copyright © 2024,    by <a href="http://aarservicesgroup.com">aarservicesgroup</a>. </span> </div>
+    <div class="footer_bottom">
+      <span>Copyright © 2024, by <a href="http://aarservicesgroup.com">aarservicesgroup</a>. </span>
+    </div>
   </div>
 </footer>
 
+
+<!-- WhatsApp Chat Box -->
+<div class="whatsapp-chat" style="position: fixed; bottom: 40px; right: 40px; z-index: 1000;">
+  <a href="https://wa.me/918340171820?text=Hello, I would like to inquire about your services!" target="_blank">
+    <img src="img/whatsapp-logo.png" alt="WhatsApp Chat" style="width: 50px; height: auto;" />
+
+  </a>
+</div>
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
